@@ -3,7 +3,7 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/bpebcnvv/public_html/effenrilagung/proyek-skripsi
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
-    - /bin/cp main.js $DEPLOYPATH
-    - /bin/cp query.css $DEPLOYPATH
+    - /bin/cp /home/bpebcnvv/public_html/effenrilagung/proyek-skripsi/style/style.css $DEPLOYPATH
+    - /bin/cp /home/bpebcnvv/public_html/effenrilagung/proyek-skripsi/javascript/main.js $DEPLOYPATH
+    - /bin/cp /home/bpebcnvv/public_html/effenrilagung/proyek-skripsi/style/query.css $DEPLOYPATH
     - /bin/cp -R img $DEPLOYPATH
