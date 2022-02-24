@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-size: 24px;
+
+}
+
+body {
+    background: rgba(17, 19, 23, 1);
+}
+
+/* Navigasi */
+a.nav-link {
+    margin-right: 1rem;
+    font-weight: 500;
+    font-size: .7rem;
+    cursor: pointer;
+}
+
+a.nav-link.active {
+    /* color: #2844EA !important; */
+    color: white !important;
+    font-weight: 700;
+}
+
+a.nav-link:hover {
+    /* color: white !important; */
+    color: #2844EA !important;
+}
+
+span {
+    color: #2844EA;
+}
+
+a.navbar-brand.nav-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Visual navigasi */
+
+nav.navbar.navbar-expand-lg.px-5.fixed-top {
+    background: radial-gradient(96.17% 239.9% at 2.29% 5.04%, rgba(91, 91, 91, 0.6) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(5px);
+
+    border-width: 1px;
+    border-style: solid;
+    border-image-slice: 30%;
+    border-image-source: linear-gradient(128.83deg, #1117A3 2.25%, rgba(27, 170, 161, 0.6) 22.76%, rgba(0, 240, 255, 0.53) 74.49%, #D010A6 98.32%);
+    transition: all 300ms ease-in;
+}
+
+
+
+div.elips-master {
+    width: 355px;
+    height: 355px;
+    background: rgba(4, 166, 49, 0.67);
+    border-radius: 50%;
+    filter: blur(200px);
+    position: absolute;
+    z-index: -999;
+}
+
+.elips-1 {
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.elips-2 {
+    left: 50%;
+    right: 50%;
+    top: 506px;
+}
+
+/* Penutup Navigasi */
+
+/* Jumbotron */
+
+div.container-jumbotron.row {
+    height: 100vh;
+    background: radial-gradient(96.17% 239.9% at 2.29% 5.04%, rgba(91, 91, 91, 0.6) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(200px);
+}
+
+
+h1.title-jumbotron,
+p.sub-title-jumbotron {
+    color: white;
+}
+
+h1.title-jumbotron {
+    font-size: 3.3vw;
+    font-weight: 700;
+}
+
+p.sub-title-jumbotron {
+    margin: 40px 0;
+    font-size: 1.3vw;
+    font-weight: 400;
+    line-height: 5vh;
+    width: 45vw;
+}
+
+div.col.container-title,
+.col.container-image-jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+}
+
+img.img-fluid.image-jumbotron {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+div.container-content-title {
+    margin-left: 70px;
+}
+
+.container-content-title button.btn.btn-sm.btn-primary.rounded {
+    font-size: 0.7rem;
+}
+
+/* Penutup jumbotron */
+
+/* Main -2 */
+div.container-fluid.main-2 {
+    margin-top: 150px;
+    background-image: url(../img/background-main-2-svg-3.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div.col.mt-5.col-md-10.offset-md-1 {
+    margin-top: 10px;
+    border-left: 8px solid rgba(10, 199, 117, 1);
+}
+
+h2.title-main-2 {
+    color: white;
+    font-size: 5vw;
+}
+
+p.sub-title-main-2 {
+    color: rgba(10, 199, 117, 1);
+    font-size: 3vw;
+}
+
+div.why-choose {
+    margin-bottom: 150px;
+}
+
+h3.why-choose-title {
+    color: rgba(10, 199, 117, 1);
+    font-size: 2.083rem;
+    font-weight: 500;
+}
+
+h4.sub-title-why-choose {
+    color: white;
+    font-size: 1.26rem;
+    margin: 30px auto;
+}
+
+p.des-why-choose {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+/* penutup Main 2 */
+
+/* Main 3 */
+div.container-fluid.main-3 {
+    margin-top: 150px;
+    background-image: url(../img/nasa-1lfI7wkGWZ4-unsplash.jpg);
+    /* background-size: contain; */
+    background-attachment: fixed;
+}
+
+div.col.col-md-6.container-content-image-main-3 {
+    background-image: url(../img/linkedin-sales-solutions-NpyF7rjqmq4-unsplash.jpg);
+    background-size: cover;
+}
+
+div.col.col-md-6.side-right-des {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    -webkit-backdrop-filter: blur(10%);
+    background: radial-gradient(113.74% 98.52% at 49.2% 1.48%, rgba(0, 0, 0, 0.6) 0%, rgba(27, 13, 186, 0.06) 100%);
+    backdrop-filter: blur(10px);
+    padding-left: 4rem;
+    padding-right: 0;
+}
+
+h2.main-3.login-title-main-3 {
+    color: white;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+
+p.sub-title-main-3 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: white;
+    max-width: 70%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+button.btn.btn-sm.btn-outline-success.ms-3 {
+    margin-left: .5vw;
+}
+
+.container-button-main-3 button.btn.btn-sm.btn-primary,
+.container-button-main-3 button.btn.btn-sm.btn-outline-success.ms-3 {
+    font-size: 1vw;
+}
+
+/* Penutup Main 3 */
+
+/* main-4 */
+div.container.main-4 {
+    margin-top: 150px;
+}
+
+h2.title-main-4 {
+    font-weight: 700;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+
+p.des-main-4.text-center {
+    color: white;
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 0;
+    width: 80%;
+}
+
+.row.testimonial-main-4.d-flex.justify-content-center {
+    margin-top: 130px;
+    flex-direction: row;
+}
+
+.testimonial-main-4.col.col-md-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img.rounded-circle.image-testimonial-main-4 {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px
+}
+
+p.testimonial-main-4,
+p.testimonial-main-4-name,
+p.testimonial-main-4-job {
+    color: white;
+    text-align: center;
+    font-size: .7rem;
+    text-align: justify;
+}
+
+
+.testimonial-main-4.col.col-md-4:hover,
+.testimonial-main-4.col.col-md-8:hover {
+    background: radial-gradient(96.17% 239.9% at 2.29% 5.04%, rgba(91, 91, 91, 0.6) 0%, rgba(255, 255, 255, 0.06) 100%);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(128.83deg, #1117A3 2.25%, rgba(27, 170, 161, 0.6) 22.76%, rgba(0, 240, 255, 0.53) 74.49%, #D010A6 98.32%);
+    border-image-slice: 49%;
+    transition: all 300ms ease-in;
+}
+
+.testimonial-main-4.col.col-md-8 {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+/* Penutup Main -4 */
+
+
+/* main 5 */
+div.container-fluid.main-5 {
+    margin-top: 150px;
+    background: radial-gradient(96.17% 239.9% at 6.77% -42.49%, rgba(91, 91, 91, 0.6) 0%, rgba(255, 255, 255, 0.06) 100%);
+    ;
+    backdrop-filter: blur(50px);
+    padding: 90px 0;
+}
+
+div.container-fluid.main-5 .row {
+    margin: 0;
+}
+
+.container-content-des-main-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h5.number-main-5 {
+    color: #0AC775;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+p.sub-des-main-5 {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+p.des-main-5 {
+    font-weight: 300;
+}
+
+p.sub-des-main-5,
+p.des-main-5 {
+    color: white;
+}
+
+/* penutup main 5 */
+
+/* main 6 */
+div.container-fluid.main-6 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+
+    background: radial-gradient(96.17% 239.9% at 6.77% -42.49%, rgba(8, 88, 35, 0.6) 0%, rgba(9, 53, 211, 0.06) 100%);
+    backdrop-filter: blur(50px);
+
+    border-width: 2px;
+    border-style: solid;
+    border-image-slice: 30%;
+    border-image-source: linear-gradient(128.83deg, #09EE3B -16.46%, rgba(17, 236, 223, 0.6) 4.05%, rgba(0, 240, 255, 0.53) 55.78%, #B0048A 79.61%);
+}
+
+div.container-fluid.main-6 .row {
+    margin: 0;
+}
+
+h2.title-main-6,
+p.quote-ceo-main-6,
+p.name-ceo-main-6 {
+    color: white;
+}
+
+h2.title-main-6 {
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+p.quote-ceo-main-6,
+p.name-ceo-main-6 {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+p.name-ceo-main-6 {
+    font-weight: 400;
+}
+
+p.quote-ceo-main-6 {
+    font-weight: 300;
+}
+
+.image-ceo-main-6 {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/IMG_20220118_102218.jpg);
+    border-radius: 50%;
+    background-size: cover;
+    margin: 70px 0;
+}
+
+/* penutup main 6 */
+
+/* main-7 */
+.container.main-7.d-flex.justify-content-center.flex-column.align-items-center {
+    margin-top: 150px;
+}
+
+.container.main-7.d-flex.justify-content-center.flex-column.align-items-center img.img-fluid {
+    width: 531px;
+    height: 382px;
+}
+
+p.des-main-6 {
+    color: white;
+    font-weight: 300;
+    font-size: 1.25rem;
+    line-height: 63px;
+    text-align: center;
+    width: 100%;
+    margin: 80px auto;
+}
+
+/* penutup main 7 */
