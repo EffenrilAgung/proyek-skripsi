@@ -10,7 +10,7 @@ html {
     margin: 0;
     scroll-behavior: smooth;
     font-size: 24px;
-
+    overflow-x: hidden;
 }
 
 body {
@@ -60,6 +60,15 @@ nav.navbar.navbar-expand-lg.px-5.fixed-top {
 }
 
 
+/* Elips */
+/* div.container-fluid.elips {
+    position: relative;
+    background-color: #2844EA !important;
+    width: 100vw;
+    height: 200vh;
+    z-index: -999;
+    margin-top: 0;
+} */
 
 div.elips-master {
     width: 355px;
@@ -67,8 +76,8 @@ div.elips-master {
     background: rgba(4, 166, 49, 0.67);
     border-radius: 50%;
     filter: blur(200px);
-    position: absolute;
     z-index: -999;
+    position: fixed;
 }
 
 .elips-1 {
@@ -82,15 +91,20 @@ div.elips-master {
     right: 50%;
     top: 506px;
 }
-
+/* Penutup Elips */
 /* Penutup Navigasi */
+
+main {
+    position: relative;
+    z-index: 1;
+}
 
 /* Jumbotron */
 
 div.container-jumbotron.row {
     height: 100vh;
     background: radial-gradient(96.17% 239.9% at 2.29% 5.04%, rgba(91, 91, 91, 0.6) 0%, rgba(255, 255, 255, 0.06) 100%);
-    backdrop-filter: blur(200px);
+    /* backdrop-filter: blur(200px); */
 }
 
 
@@ -389,20 +403,29 @@ p.name-ceo-main-6 {
 }
 
 p.name-ceo-main-6 {
-    font-weight: 400;
+    font-weight: 700;
+    font-style: italic;
 }
 
 p.quote-ceo-main-6 {
     font-weight: 300;
+    max-width: 80%;
 }
 
 .image-ceo-main-6 {
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
     background-image: url(../img/IMG_20220118_102218.jpg);
     border-radius: 50%;
     background-size: cover;
     margin: 70px 0;
+}
+.col.col-md-8.text-center.main-6 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* penutup main 6 */
@@ -413,8 +436,8 @@ p.quote-ceo-main-6 {
 }
 
 .container.main-7.d-flex.justify-content-center.flex-column.align-items-center img.img-fluid {
-    width: 531px;
-    height: 382px;
+    width: 400px;
+    height: 282px;
 }
 
 p.des-main-6 {
