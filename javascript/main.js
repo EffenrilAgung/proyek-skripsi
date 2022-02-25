@@ -4,11 +4,7 @@ let containerImage = document.querySelectorAll(
 
 
   window.addEventListener("load", () => {
-    if (screen.width <= 425) {
-      for (let i = 0; i < containerImage.length; i++) {
-        containerImage[i].parentElement.removeChild(containerImage[i]);
-      }
-    }
+    
 
       if (screen.width <= 1200) {
         let remove_col = document.querySelectorAll(
@@ -47,6 +43,15 @@ let containerImage = document.querySelectorAll(
          }
         }
   });
+
+  function removeImage() {
+    if (screen.width <= 425) {
+      for (let i = 0; i < containerImage.length; i++) {
+        containerImage[i].parentElement.removeChild(containerImage[i]);
+      }
+    }
+  }
+  window.addEventListener('load', removeImage())
 
 // scroll
 
