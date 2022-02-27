@@ -115,6 +115,11 @@ window.addEventListener("load", () => {
   }
 });
 
+// Year Automatic
+const getNewYear = new Date()
+let getYear = document.getElementsByClassName('year')[0].innerHTML = `&nbsp;${getNewYear.getFullYear()}`
+console.log(getYear)
+
 // let aa = document.querySelector('.container-fluid.main-5')
 // let bb = []
 // bb.push(window.scrollTop)

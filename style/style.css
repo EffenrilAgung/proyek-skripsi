@@ -467,6 +467,36 @@ footer.container-fluid table td, footer.container-fluid p{
 h2.title-footer {
     font-size: 1rem;
 }
+.image-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 9rem;
+
+}
+.image-component .github svg, .image-component .facebook svg,.image-component .linkedin svg,.image-component .ig svg {
+    width: 1rem;
+}
+.image-component .github svg:hover,.image-component .facebook svg:hover{
+    background-color: white;
+    border-radius: 50%;
+}
+.image-component .github svg {
+    filter: invert(13%) sepia(7%) saturate(0%) hue-rotate(127deg) brightness(103%) contrast(96%);
+    background-color: white;
+    border-radius: 50%;
+    
+}
+.image-component .facebook svg {
+    filter: invert(20%) sepia(100%) saturate(4345%) hue-rotate(241deg) brightness(101%) contrast(95%);
+}
+.image-component .linkedin svg {
+    filter: invert(32%) sepia(93%) saturate(492%) hue-rotate(173deg) brightness(96%) contrast(95%);
+}
+.image-component .ig svg {
+    filter: invert(46%) sepia(73%) saturate(1561%) hue-rotate(318deg) brightness(114%) contrast(101%);
+}
 /* Penutup Footer */
 
 /* Foot Footer */
