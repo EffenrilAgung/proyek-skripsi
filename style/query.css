@@ -72,7 +72,7 @@
     }
 
     /* all Container */
-    div.container-fluid.main-2,div.container-fluid.main-3, .container.main-4, div.container-fluid.main-5, .container-fluid.main-6, .container.main-7.d-flex.justify-content-center.flex-column.align-items-center{
+    div.container-fluid.main-2,div.container-fluid.main-3, .container.main-4, div.container-fluid.main-5, .container-fluid.main-6, .container.main-7.d-flex.justify-content-center.flex-column.align-items-center, footer.container-fluid{
         margin-top: 80px;
     }
     /* Jumbotron */
@@ -141,4 +141,9 @@
         height: 282px;
     }
     /* Penutup Main 7 */
+    /* Footer */
+    .col-md-4.hub-footer {
+        margin: 1.2rem auto;
+    }
+    /* Penutup Footer */
 }
