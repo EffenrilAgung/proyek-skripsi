@@ -86,38 +86,82 @@ function scrollingjoin() {
   });
 }
 function scrollinghome() {
-  let elementId = document.getElementById(`home`);
-  elementId.scrollIntoView({ behavior: "smooth" });
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
 window.onscroll = function () {
   navbarEffect();
 };
 // percen
-const numberCounter = document.querySelectorAll('.number-main-5')
-const speedNumber = 5000
+const numberCounter = document.querySelectorAll(".number-main-5");
+const containerMain5 = document.querySelector(".main-5");
+// console.log(containerMain5);
+let started = false;
+// const speedNumber = 50;
 
-numberCounter.forEach(counter => {
-  const updateCount = () => {
-    const target = +counter.getAttribute('data-bs-target')
-    const count = +counter.innerText;
+// numberCounter.forEach(counter => {
+//   const updateCount = () => {
+//     const target = +counter.getAttribute('data-bs-target')
+//     const count = +counter.innerText;
 
-    const inc  = target / speedNumber
+//     const inc  = target / speedNumber
 
-    if(count < target) {
-      counter.innerText = Math.ceil(count + inc)
-      setTimeout(updateCount, 1)
+//     if(count < target) {
+//       counter.innerText = Math.ceil(count + inc)
+//       setTimeout(updateCount, 1)
+//     } else {
+//       count.innerText = target
+//     }
+//   }
+// })
+
+let school = document.querySelector("h5.number-main-5.school");
+let student = document.querySelector("h5.number-main-5.student");
+// let containerMain5 = document.querySelector(".container-content-des-main-5");
+let count = 0;
+let count2 = 0;
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= containerMain5.offsetTop) {
+    if (!started) {
+      let intervalNumber = setInterval(animasi, 20);
+      let intervalNumber2 = setInterval(animasi2, 1);
+      function animasi() {
+        if (count == 2000) {
+          clearInterval();
+        } else {
+          count++;
+          school.textContent = count;
+        }
+      }
+      function animasi2() {
+        if (count2 == 200) {
+          clearInterval();
+        } else {
+          count2++;
+          student.textContent = count2;
+        }
+      }
     } else {
-      count.innerText = target
+      started = true;
     }
-    
-    // console.log(inc)
   }
-  updateCount()
-})
+  // console.log(window.scrollY >= containerMain5.offsetTop)
+});
 // console.log(numberCounter)
 // Year Automatic
 const getNewYear = new Date();
 let getYear = (document.getElementsByClassName(
   "year"
 )[0].innerHTML = `&nbsp;${getNewYear.getFullYear()}`);
+
+// nav link active
+const navLink = document.querySelectorAll(".nav-link");
+
+for (let i = 0; navLink.length > i; i++) {
+  navLink[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
